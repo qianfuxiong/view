@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no" />
+    <title>贵州经济发展可视化</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>贵州风光：数据图谱展示</h1>
+      <h2><strong>获得成就</strong><sub>Achieve achievements</sub><b class="logoline"></b><b class="logoline1"></b><b class="logoline2"></b><b class="logoline3"></b><b class="logoline4"></b></h2>
+      <div class="images1"></div>
+      <div class="images2"></div>
+      <div class="images3"></div>
+      <!--时间区-->
+      <div class="date-timer">
+        <p>
+          <strong>2022年</strong>
+          <strong id="S" class="hide"></strong>
+        </p>
+        <ul>
+          <li>黔看新时代，黄金这十年</li>
+        </ul>
+      </div>
+      <div class="big-index-1">
+        <ul>
+          <li>
+            <a href="./Data-Html/views/index3.html" title="点击进入下一页">
+              <b class="animation-1"></b><b class="animation-2"></b><b class="animation-3"></b>
+              <p></p>
+              <strong>经济</strong>
+            </a>
+          </li>
+          <li>
+            <a href="./mingSheng/ming.html" title="点击进入下一页">
+              <b class="animation-1"></b><b class="animation-2"></b><b class="animation-3"></b>
+              <p></p>
+              <strong>民生</strong>
+            </a>
+          </li>
+          
+          <li>
+            <a href="./Data-Html/views/index1.html" title="点击进入下一页">
+              <b class="animation-1"></b><b class="animation-2"></b><b class="animation-3"></b>
+              <p></p>
+              <strong>交通</strong>
+            </a>
+          </li>
+          <li>
+            <a href="./Data-Html/views/Lv.html" title="点击进入下一页">
+              <b class="animation-1"></b><b class="animation-2"></b><b class="animation-3"></b>
+              <p></p>
+              <strong>旅游</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="submenu"></div>
+      <div class="center-area">
+        <div class="shiping">
+          <video src="./images/1.mp4" controls></video>
+        </div>
+      </div>
+      <div class="details1-area">
+          <span class="detailsl-area-left"></span>
+          <div class="details1-area-center">
+            <h3></h3>
+            <dl>
+              <dt>贵州省生产总值（亿元）</dt>
+              <dd>： 14755.9185</dd>
+              <dt>高速公路突破</dt>
+              <dd>：8000(km)</dd>
+              <dt>全省铁路里程突破</dt>
+              <dd>：3800(km)</dd>
+            </dl>
+            <b></b>
+          </div>
+          <span class="detailsl-area-right"></span>
+        </div>
+        <div class="details2-area">
+          <span class="details2-area-left"></span>
+          <div class="details2-area-center">
+            <h3></h3>
+            <dl>
+              <dt>贵州省脱贫人数</dt>
+              <dd>： 923万</dd>
+              <dt>财政总收入（亿元）</dt>
+              <dd>： 2207.8083</dd>
+              <dt>规模以上工业增加值</dt>
+              <dd>： 5.5%</dd>
+              <dt>固定资产投资</dt>
+              <dd>： 4.5%</dd>
+            </dl>
+            <b></b>
+          </div>
+          <span class="details2-area-right"></span>
+        </div>
+      <div class="right-area">
+        <h3>10年GDP对比值<b></b></h3>
+
+        <div class="area-inbox-1"></div>
+        <div class="area-inbox-2">
+          <div class="area-text">
+            <b class="animation-line1"></b>
+            <h4>子页说明：</h4>
+            <p class="text_container">
+              <script>
+                var s = '（守好发展和生态底线，走出赶超跨越发展新路。请点击顶部5大成果，进入下一页详细查看贵州的“黄金十年”的成就展示。）'
+                var con = $('.text_container')
+                var index = 0
+                var length = s.length
+                var tId = null
+                function start() {
+                  con.text('')
+                  tId = setInterval(function () {
+                    con.append(s.charAt(index))
+                    if (index++ === length) {
+                      clearInterval(tId)
+                      index = 0
+                      start()
+                    }
+                  }, 300)
+                }
+                start()
+              </script>
+            </p>
+            <b class="animation-line2"></b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
